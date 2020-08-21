@@ -19,7 +19,7 @@ const Search= ({navigation})=>{
     const [loading,setLoading] = useState(false)
     const fetchData = () =>{
         setLoading(true)
-        fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=8&q=${value}&type=video&key=AIzaSyAjvUf3zgxaUwHD1NIl1jLGR3mIhmQIZMc`)
+        fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=8&q=${value}&type=video&key={yourgoogleapikey}`)
         .then(res=>res.json())
         .then(data=>{
 
